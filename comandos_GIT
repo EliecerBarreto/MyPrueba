@@ -1,0 +1,81 @@
+[educacionit@localhost Documentos]$ git clone https://github.com/EliecerBarreto/MyPrueba.git
+Cloning into 'MyPrueba'...
+warning: You appear to have cloned an empty repository.
+[educacionit@localhost Documentos]$ las
+bash: las: no se encontró la orden...
+[educacionit@localhost Documentos]$ ls
+colores.sh  eliecer.sh  hernan.sh  kariana.sh  marcos2.sh  marcos.sh  MyPrueba  New-repo  prueba-SH
+[educacionit@localhost Documentos]$ cd MyPrueba/
+[educacionit@localhost MyPrueba]$ ls
+[educacionit@localhost MyPrueba]$ ls -a
+.  ..  .git
+[educacionit@localhost MyPrueba]$ git pull
+Your configuration specifies to merge with the ref 'master'
+from the remote, but no such ref was fetched.
+[educacionit@localhost MyPrueba]$ cp ../eliecer.sh
+cp: falta el fichero de destino después de «../eliecer.sh»
+Pruebe 'cp --help' para más información.
+[educacionit@localhost MyPrueba]$ cp ../eliecer.sh .
+[educacionit@localhost MyPrueba]$ ls
+eliecer.sh
+[educacionit@localhost MyPrueba]$ git add *
+[educacionit@localhost MyPrueba]$ git commit -am "agregue el script de shell script eliecer,sh"
+[master (root-commit) 5f34229] agregue el script de shell script eliecer,sh
+ Committer: educacionit <educacionit@localhost.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 93 insertions(+)
+ create mode 100644 eliecer.sh
+[educacionit@localhost MyPrueba]$ git config --global user.name "Your Name"
+[educacionit@localhost MyPrueba]$     git config --global user.email you@example.com
+[educacionit@localhost MyPrueba]$ git commit -am "agregue el script de shell script eliecer,sh"
+# On branch master
+nothing to commit, working directory clean
+[educacionit@localhost MyPrueba]$ git push origin master
+elieCounting objects: 3, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 841 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/EliecerBarreto/MyPrueba.git
+ * [new branch]      master -> master
+[educacionit@localhost MyPrueba]$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/EliecerBarreto/MyPrueba
+   5f34229..a440e13  master     -> origin/master
+[educacionit@localhost MyPrueba]$ git pull
+Updating 5f34229..a440e13
+Fast-forward
+ eliecer.sh | 2 ++
+ 1 file changed, 2 insertions(+)
+[educacionit@localhost MyPrueba]$ ls
+eliecer.sh
+[educacionit@localhost MyPrueba]$ vi eliecer.sh
+[educacionit@localhost MyPrueba]$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/EliecerBarreto/MyPrueba
+   a440e13..8876944  master     -> origin/master
+[educacionit@localhost MyPrueba]$ vi eliecer.sh
+[educacionit@localhost MyPrueba]$ git pull
+Updating a440e13..8876944
+Fast-forward
+ eliecer.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[educacionit@localhost MyPrueba]$ vi eliecer.sh
+[educacionit@localhost MyPrueba]$
