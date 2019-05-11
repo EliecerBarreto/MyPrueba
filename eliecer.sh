@@ -7,7 +7,7 @@ mag=$'\e[1;35m'
 cyn=$'\e[1;36m'
 end=$'\e[0m'
 
-#Esto lo hioce en GIT
+#Esto lo hioce en GIT de n uevo
 
 echo """
 
